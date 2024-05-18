@@ -193,11 +193,11 @@ while running == True:
             
         if width/2 <= mouse[0] <= width/2+180 and 500/2 <= mouse[1] <= 500/2+40 and shop_area == True:
             pygame.draw.rect(screen,color_light,[width/2,500/2,180,40])
-            draw_text("Damage up                                   " + str(d_up_cost), text_font, (0, 0, 0), 10, 260)
+            draw_text("Steroids                                   " + str(d_up_cost), text_font, (0, 0, 0), 10, 260)
           
         elif shop_area == True: 
             pygame.draw.rect(screen,color_dark,[width/2,500/2,180,40])
-            draw_text("Damage up                                   " + str(d_up_cost), text_font, (0, 0, 0), 10, 260)
+            draw_text("Steroids                                   " + str(d_up_cost), text_font, (0, 0, 0), 10, 260)
 
         if purchased_damage == True:
             draw_text("You've purchased " + str(damage_up_tick) + " damage up's", text_font, (0, 0, 0), 15, 290)
